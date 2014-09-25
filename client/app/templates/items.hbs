@@ -1,0 +1,23 @@
+{{#view "items-header"}}
+  <h2 class="pull-left">Items</h2>
+{{/view}}
+
+<section class="grid-body">
+  {{#each}}
+  <div class="grid-cell">
+    <article class="item">
+      <img src="/images/placeholder.png">
+      <div class="content">
+        <h1>{{title}}</h1>
+        <p>{{blurb}}</p>
+      </div>
+      <footer>
+        <ul>
+          <li><i class="fa fa-twitter"></i>{{twitter}}</li>
+          <li><i class="fa fa-thumbs-up"></i>{{likes}}</li>
+        </ul>
+      </footer>
+    </article>
+  </div>
+  {{/each}}
+</section>
