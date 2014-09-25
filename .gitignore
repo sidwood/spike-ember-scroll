@@ -1,2 +1,9 @@
+client/bower_components/
+client/dist/
+client/node_modules/
+client/tmp/
 server/node_modules/
 .DS_Store
+libpeerconnection.log
+npm-debug.log
+testem.log
