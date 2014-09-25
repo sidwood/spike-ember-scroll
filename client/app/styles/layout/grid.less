@@ -1,0 +1,69 @@
+/**
+ * GRID LAYOUT
+ * ----------------------------------------------------------------------------
+ */
+
+.grid-body {
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: (@app-gutter-width / 2);
+  padding-right: (@app-gutter-width / 2);
+}
+
+.grid-header {
+  background-color: rgba(247,247,247,0); // @grey-lighter in rgb
+  box-shadow: none;
+  height: 90px;
+  padding-left: (@app-appbar-width + @app-gutter-width);
+  padding-right: @app-gutter-width;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: @zindex-navbar - 100;
+  -webkit-transition: all .1s ease-in-out;
+     -moz-transition: all .1s ease-in-out;
+          transition: all .1s ease-in-out;
+  &.is-opaque {
+    background-color: rgba(247,247,247,0.95); // @grey-lighter in rgb
+    box-shadow: 0 1px 0 rgba(0,0,0,0.07);
+  }
+  button {
+    margin-top: 20px;
+  }
+}
+
+.grid-cell {
+  position: relative;
+  padding-left:  (@app-gutter-width / 2);
+  padding-right: (@app-gutter-width / 2);
+  float: left;
+  width: 100%;
+  @media (min-width: @app-xs-min) {
+    width: 50%;
+  }
+  @media (min-width: @app-md-min) {
+    width: 33.33333333%;
+  }
+  @media (min-width: @app-lg-min) {
+    width: 25%;
+  }
+  @media (min-width: @app-xl-min) {
+    width: 20%;
+  }
+  @media (min-width: @app-x2-min) {
+    width: 16.66666667%;
+  }
+  @media (min-width: @app-x3-min) {
+    width: 14.285714%;
+  }
+  @media (min-width: @app-x4-min) {
+    width: 12.5%;
+  }
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+}
+

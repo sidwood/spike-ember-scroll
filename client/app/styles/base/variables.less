@@ -1,0 +1,23 @@
+// application grid
+@app-appbar-width:             90px;
+@app-gutter-width:             30px;
+@app-item-min-width:           230px;
+@app-column-width:             (@app-gutter-width + @app-item-min-width);
+
+// application breakpoints
+@app-xs-min:                  (2 * @app-column-width);
+@app-sm-min:                  (@app-appbar-width + (2 * @app-column-width));
+@app-md-min:                  (@app-appbar-width + (3 * @app-column-width));
+@app-lg-min:                  (@app-appbar-width + (4 * @app-column-width));
+@app-xl-min:                  (@app-appbar-width + (5 * @app-column-width));
+@app-x2-min:                  (@app-appbar-width + (6 * @app-column-width));
+@app-x3-min:                  (@app-appbar-width + (7 * @app-column-width));
+@app-x4-min:                  (@app-appbar-width + (8 * @app-column-width));
+
+@app-xs-max:                  (@app-sm-min - 1);
+@app-sm-max:                  (@app-md-min - 1);
+@app-md-max:                  (@app-lg-min - 1);
+@app-lg-max:                  (@app-xl-min - 1);
+@app-xl-max:                  (@app-x2-min - 1);
+@app-x2-max:                  (@app-x3-min - 1);
+@app-x3-max:                  (@app-x4-min - 1);

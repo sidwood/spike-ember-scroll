@@ -1,0 +1,51 @@
+/**
+ * APPBAR MODULE
+ * -----------------------------------------------------------------------------
+ */
+
+.appbar {
+  background-color: @gray-darker;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  z-index: @zindex-navbar;
+  a {
+    color: #88898c;
+    text-decoration: none;
+    &:hover {
+      color: #dfe0e6;
+    }
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      padding-top: 24px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.2;
+      &.active {
+        a {
+          color: #dfe0e6;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+      i {
+        display: block;
+        font-size: 25px;
+      }
+    }
+  }
+  @media (min-width: @screen-sm-min) {
+    right: auto;
+    bottom: 0;
+    height: auto;
+    width: @app-appbar-width;
+  }
+}
